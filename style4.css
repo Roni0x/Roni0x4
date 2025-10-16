@@ -1,0 +1,142 @@
+
+:root {
+    --primary-blue: #2563eb;
+    --light-blue: #dbeafe;
+    --dark-blue: #1e40af;
+    --white: #ffffff;
+    --gray-light: #f8fafc;
+    --gray-border: #e2e8f0;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
+    color: var(--text-dark);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    color: var(--white);
+    width: 100%;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px 0;
+}
+
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+
+.list-group-item {
+    border-left: 4px solid var(--primary-blue);
+    margin-bottom: 0.5rem;
+    border-radius: 8px !important;
+}
+
+.list-group-item a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.list-group-item a:hover {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background: var(--primary-blue);
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+}
+
+
+.form-label {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+}
+
+
+.footer {
+    background: var(--text-dark);
+    color: var(--white);
+    width: 100%;
+}
+
+
+.links-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
